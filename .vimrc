@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 " Plugin 'kakkyz81/evervim'
-Plugin 'neilagabriel/vim-geeknote'
+" Plugin 'neilagabriel/vim-geeknote'
 call vundle#end()
 filetype plugin indent on
 " end vundle setup
