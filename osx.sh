@@ -10,6 +10,7 @@ brew install python
 brew install vagrant
 brew install vim
 brew install wget
+brew cask install bettertouchtool
 brew cask install dropbox
 brew cask install firefox
 brew cask install google-chrome
