@@ -103,3 +103,9 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 # Stop iTunes from responding to the keyboard media keys
 launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
+
+# Enable key repeat in Sublime Text
+defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false
+
+# Enable key repeat globally
+# defaults write -g ApplePressAndHoldEnabled -bool false
