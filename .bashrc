@@ -11,11 +11,6 @@ export DBUS_SESSION_BUS_ADDRESS="launchd:env=DBUS_FINK_SESSION_BUS_SOCKET"
 # shell prompt
 export PS1='\u@\h:\W>'
 
-# TMUX
-# If not running interactively, do not do anything
-#[[ $- != *i* ]] && return
-#[[ -z "$TMUX" ]] && exec tmux
-
 # aliases
 alias cpwd='pwd | pbclip'
 alias ppwd='cd `pbpaste`'
@@ -29,3 +24,8 @@ alias ll='ls -AlG'
 alias ls='ls -G'
 alias ipy='ipython qtconsole --pylab=inline'
 alias gitlog='git log --graph --oneline --decorate --all'
+
+# # TMUX
+# # If not running interactively, do not do anything
+# [[ $- != *i* ]] && return
+# [[ -z "$TMUX" ]] && exec tmux
