@@ -13,8 +13,8 @@ filetype plugin indent on
 " setup evervim
 " let g:evervim_devtoken='S=s58:U=61279b:E=15314309f4d:C=14bbc7f72a0:P=1cd:A=en-devtoken:V=2:H=265c62083dc826bb182e3b18fc603a21'
 
-" vim-geeknote
-noremap <F8> :Geeknote<cr>
+" search for visual selection with '//'
+vnoremap // y/<C-R>"<CR>
 
 " code formatting stuff
 set nu
