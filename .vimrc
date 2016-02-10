@@ -7,22 +7,22 @@ Plugin 'gmarik/Vundle.vim'
 " Plugin 'kakkyz81/evervim'
 " Plugin 'neilagabriel/vim-geeknote'
 call vundle#end()
-filetype plugin indent on
 " end vundle setup
 
 " setup evervim
 " let g:evervim_devtoken='S=s58:U=61279b:E=15314309f4d:C=14bbc7f72a0:P=1cd:A=en-devtoken:V=2:H=265c62083dc826bb182e3b18fc603a21'
 
-" vim-geeknote
-noremap <F8> :Geeknote<cr>
+" search for visual selection with '//'
+vnoremap // y/<C-R>"<CR>
 
 " code formatting stuff
+filetype plugin indent on
+set autoindent
 set nu
-set tabstop=4
-set shiftwidth=4
-set expandtab
+set noexpandtab
+set tabstop=2
+set shiftwidth=2
 syntax on
-set ai
 
 " python running and code-completion
 nmap <F5> :!python %<cr>
@@ -30,6 +30,7 @@ let g:pydiction_location = '~/.vim/after/ftplugin/pydiction/complete-dict'
 let g:pydiction_menu_height = 15
 
 " split window stuff
+" https://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally
 set splitbelow
 set splitright
 nnoremap <C-J> <C-W><C-J>

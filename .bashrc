@@ -24,6 +24,18 @@ alias ll='ls -AlG'
 alias ls='ls -G'
 alias ipy='ipython qtconsole --pylab=inline'
 alias gitlog='git log --graph --oneline --decorate --all'
+# alias startvpn="sudo launchctl load -w /Library/LaunchDaemons/net.juniper.AccessService.plist; open -a '/Applications/Junos Pulse.app/Contents/Plugins/JamUI/PulseTray.app/Contents/MacOS/PulseTray'"
+# alias quitvpn="osascript -e 'tell application \"PulseTray.app\" to quit';sudo launchctl unload -w /Library/LaunchDaemons/net.juniper.AccessService.plist"
+function startvpn() {
+    sudo launchctl load -w /Library/LaunchDaemons/net.juniper.AccessService.plist
+    launchctl load -w /Library/LaunchAgents/net.juniper.pulsetray.plist
+}
+function quitvpn() {
+    launchctl unload -w /Library/LaunchAgents/net.juniper.pulsetray.plist
+    sudo launchctl unload -w /Library/LaunchDaemons/net.juniper.AccessService.plist
+    osascript -e 'tell application "Junos Pulse" to quit'
+}
+
 
 # # TMUX
 # # If not running interactively, do not do anything
