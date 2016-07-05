@@ -14,7 +14,8 @@ export PS1='\u@\h:\W>'
 # aliases
 alias cpwd='pwd | pbclip'
 alias ppwd='cd `pbpaste`'
-alias shome='ssh adam@acofer.ddns.net -X -L 5901:127.0.0.1:5901 -L 6697:127.0.0.1:6697 -L 1194:127.0.0.1:1194'
+alias shome='ssh adam@acofer.ddns.net -X -L 5901:127.0.0.1:5901 -L 6697:127.0.0.1:6697 -L 1194:127.0.0.1:1194 -L 32400:127.0.0.1:32400 -L 5009:192.168.1.1:5009'
+# last rule in alias above is for airport extreme, use airport utility to open 127.0.0.1
 alias scer='ssh acofer@cerberus -X'
 alias ssto='ssh acofer@SCE-storage'
 alias sclu='ssh acofer@SCE-cluster'
@@ -24,6 +25,8 @@ alias ll='ls -AlG'
 alias ls='ls -G'
 alias ipy='ipython qtconsole --pylab=inline'
 alias gitlog='git log --graph --oneline --decorate --all'
+alias dnsflush='sudo killall -HUP mDNSResponder'
+alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
 # alias startvpn="sudo launchctl load -w /Library/LaunchDaemons/net.juniper.AccessService.plist; open -a '/Applications/Junos Pulse.app/Contents/Plugins/JamUI/PulseTray.app/Contents/MacOS/PulseTray'"
 # alias quitvpn="osascript -e 'tell application \"PulseTray.app\" to quit';sudo launchctl unload -w /Library/LaunchDaemons/net.juniper.AccessService.plist"
 function startvpn() {
