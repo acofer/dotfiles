@@ -7,6 +7,7 @@ brew install curl
 brew install git
 brew install node
 brew install python
+brew install tmux
 brew install vagrant
 brew install vim
 brew install wget
@@ -21,6 +22,12 @@ brew cask install vlc
 
 pip install ipython
 pip install powerline-status
+pip install psutil
+
+git clone git@github.com:powerline/fonts.git
+cd fonts
+./install.sh
+cd ..
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
