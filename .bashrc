@@ -44,3 +44,5 @@ function quitvpn() {
 # # If not running interactively, do not do anything
 # [[ $- != *i* ]] && return
 # [[ -z "$TMUX" ]] && exec tmux
+
+# export PLINY_USE_DYNAMIC_DNS=true

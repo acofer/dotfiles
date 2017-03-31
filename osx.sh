@@ -25,6 +25,7 @@ brew cask install gimp
 brew cask install google-chrome
 brew cask install iterm2
 curl -L https://iterm2.com/misc/install_shell_integration_and_utilities.sh | bash
+brew cask install qlmarkdown
 brew cask install sublime-text3
 brew cask install virtualbox
 brew cask install vivaldi
@@ -135,3 +136,5 @@ defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false
 
 # Enable key repeat globally
 # defaults write -g ApplePressAndHoldEnabled -bool false
+
+defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Send" "@\U21a9"
