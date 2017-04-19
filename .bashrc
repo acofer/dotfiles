@@ -39,6 +39,7 @@ function quitvpn() {
     osascript -e 'tell application "Junos Pulse" to quit'
 }
 
+source ~/bin/git-completion.bash
 
 # # TMUX
 # # If not running interactively, do not do anything
