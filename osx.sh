@@ -1,38 +1,10 @@
 #!/bin/bash
 xcode-select --install
-git clone git@github.com:acofer/dotfiles.git
+# git clone git@github.com:acofer/dotfiles.git
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew tap caskroom/cask
-brew install brew-cask
-brew tap caskroom/versions
-brew install coreutils
-brew install curl
-brew install git
-brew install node
-brew install python
-brew install socat
-brew install tmux
-brew install vagrant
-brew install vim
-brew install wget
-brew cask install bettertouchtool
-brew cask install cyberduck
-brew cask install dropbox
-brew cask install duet
-brew cask install firefox
-brew cask install gimp
-brew cask install google-chrome
-brew cask install iterm2
+brew bundle
 curl -L https://iterm2.com/misc/install_shell_integration_and_utilities.sh | bash
-brew cask install qlmarkdown
-brew cask install sublime-text3
-brew cask install virtualbox
-brew cask install vivaldi
-brew cask install vlc
-brew cask install xquartz
-brew cask install yujitach-menumeters
-
 
 sudo -i
 pip install ipython
@@ -52,9 +24,6 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
-# Sync Sublime Text 3 configuration
-rm -r ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-ln -s ~/Dropbox/Sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
 ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/bin/subl
 echo "You probably want to press Ctrl+` in Sublime Text and then run this:"
