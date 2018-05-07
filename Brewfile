@@ -32,7 +32,7 @@ brew "vegeta"
 brew "vim"
 brew "watch"
 brew "webp"
-brew "weechat", args: ["with-perl", "with-python@2"]
+brew "weechat", args: ["with-curl", "with-lua", "with-perl", "with-python@2"]
 brew "wget"
 brew "wireshark"
 brew "drone/drone/drone"
