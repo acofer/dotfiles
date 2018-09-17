@@ -25,6 +25,7 @@ brew "imlib2"
 brew "jq"
 brew "lame"
 brew "libcaca", args: ["with-imlib2"]
+brew "lynx"
 brew "python"
 brew "mackup"
 brew "macvim", args: ["with-override-system-vim"], link: false
@@ -45,7 +46,7 @@ brew "weechat", args: ["with-curl", "with-lua", "with-perl", "with-python@2"]
 brew "wget"
 brew "wireshark"
 brew "drone/drone/drone"
-brew "go-delve/delve/delve"
+brew "go-delve/delve/delve", link: false
 cask "cyberduck"
 cask "dash"
 cask "datagrip"
