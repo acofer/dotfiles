@@ -13,6 +13,7 @@ brew "autoenv"
 brew "bash-completion"
 brew "cfssl"
 brew "coreutils"
+brew "delve", link: false
 brew "go"
 brew "dep"
 brew "dnsmasq"
@@ -46,7 +47,6 @@ brew "weechat", args: ["with-curl", "with-lua", "with-perl", "with-python@2"]
 brew "wget"
 brew "wireshark"
 brew "drone/drone/drone"
-brew "go-delve/delve/delve", link: false
 cask "cyberduck"
 cask "dash"
 cask "datagrip"
