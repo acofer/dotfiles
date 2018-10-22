@@ -8,7 +8,7 @@ if [ -f ~/.bashrc ]; then
 fi
 
 export GOPATH=~/go
-# export GOROOT=/usr/local/opt/go
+export GOROOT=/usr/local/opt/go
 
 [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
 
