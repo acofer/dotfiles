@@ -7,10 +7,14 @@ if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
 
-export GOPATH=~/go
-export GOROOT=/usr/local/opt/go
+export GOROOT=/usr/local/opt/go/libexec
+export GOPATH=$HOME/go
 
 [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 source /usr/local/opt/autoenv/activate.sh
+
+export LANG=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+
