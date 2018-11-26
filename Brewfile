@@ -29,7 +29,7 @@ brew "libcaca", args: ["with-imlib2"]
 brew "lynx"
 brew "python"
 brew "mackup"
-brew "macvim", args: ["with-override-system-vim"], link: false
+brew "macvim", link: false
 brew "node@6"
 brew "pgcli"
 brew "psutils"
