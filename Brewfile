@@ -32,7 +32,7 @@ brew "libcaca", args: ["with-imlib2"]
 brew "python"
 brew "lynx"
 brew "mackup"
-brew "macvim"
+brew "macvim", link: false
 brew "node@6"
 brew "pgcli"
 brew "postgresql"
