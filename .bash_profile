@@ -7,6 +7,8 @@ if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
 
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
 export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=$HOME/go
 
