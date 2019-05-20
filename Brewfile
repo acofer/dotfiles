@@ -51,7 +51,7 @@ brew "vim"
 brew "watch"
 brew "weechat"
 brew "wget"
-brew "wireshark"
+brew "wireshark", link: false
 brew "drone/drone/drone"
 cask "cyberduck"
 cask "dash"
