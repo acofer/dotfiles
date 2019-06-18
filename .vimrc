@@ -85,3 +85,8 @@ command! -nargs=* RunSilent
     \ | execute ':silent !'.'<args>'
     \ | execute ':redraw!'
 nnoremap <C-O> :RunSilent pandoc --latex-engine=xelatex -o /tmp/vim-pandoc-out.pdf %<CR>
+
+" https://threatpost.com/linux-command-line-editors-high-severity-bug/145569/
+set modelines=0
+set nomodeline
+
