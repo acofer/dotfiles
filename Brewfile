@@ -18,6 +18,7 @@ brew "curl"
 brew "delve", link: false
 brew "go"
 brew "dep"
+brew "direnv"
 brew "dnsmasq", restart_service: true
 brew "easy-tag"
 brew "git"
