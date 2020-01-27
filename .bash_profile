@@ -15,8 +15,8 @@ export GOPATH=$HOME/go
 [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-source /usr/local/opt/autoenv/activate.sh
 
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 
+export BASH_SILENCE_DEPRECATION_WARNING=1
