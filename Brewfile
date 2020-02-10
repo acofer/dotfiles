@@ -19,7 +19,7 @@ brew "delve", link: false
 brew "go"
 brew "dep"
 brew "direnv"
-brew "dnsmasq", restart_service: true
+brew "dnsmasq"
 brew "easy-tag"
 brew "git"
 brew "git-lfs"
