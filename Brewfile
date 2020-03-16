@@ -8,7 +8,7 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 cask "xquartz"
-brew "python", link: false
+brew "python"
 brew "ant"
 brew "bash-completion"
 brew "cfssl"
